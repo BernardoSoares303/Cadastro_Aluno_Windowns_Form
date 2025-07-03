@@ -37,7 +37,7 @@ namespace Cadastro_Aluno_Windowns_Form
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Form2 Form2 = new Form2(a.nome,a.cpf,a.genero,a.responsavel,a.telefone,a.email,a.endereco,a.matricula,a.serie_turma,a.turno,a.status);
+            Form2 Form2 = new Form2(a.nome,a.cpf,a.genero,a.responsavel,a.telefone,a.email,a.endereco,a.matricula,a.serie_turma,a.turno,a.status,a.rg);
             Form2.FormClosed += (s, e) => this.Show();
             Form2.Show();
             this.Hide();
@@ -45,7 +45,7 @@ namespace Cadastro_Aluno_Windowns_Form
 
         private void TextNome_TextChanged(object sender, EventArgs e)
         {
-            a.nome = Regex.Replace(TextNome.Text, @"Nome completo:\s*", "");
+            a.nome = Regex.Replace(TextNome.Text, @"Nome Completo:\s*", "");
         }
 
         private void TextCpf_TextChanged(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace Cadastro_Aluno_Windowns_Form
 
         private void textEmail_TextChanged(object sender, EventArgs e)
         {
-            a.telefone = Regex.Replace(textTelefone.Text, @"Telefone:\s*", "");
+            a.email = Regex.Replace(textEmail.Text, @"Email:\s*", "");
         }
 
         private void textEndereco_TextChanged(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace Cadastro_Aluno_Windowns_Form
 
         private void textStatus_TextChanged(object sender, EventArgs e)
         {
-            a.status = Regex.Replace(textStatus.Text, @"Status \(ativo, trancado, evadido, concluído):\s", "");
+            a.status = Regex.Replace(textStatus.Text, @"Status \(ativo, trancado, evadido, concluído\):\s", "");
         }
 
         private void Genero_Masculino_CheckedChanged(object sender, EventArgs e)

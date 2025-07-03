@@ -23,13 +23,14 @@ namespace Cadastro_Aluno_Windowns_Form
         private string serie_turma;
         private string turno;
         private string status;
+        private string rg;
 
         public Form2()
         {
             InitializeComponent();
         }
 
-        public Form2(string nome, string cpf, string genero, string responsavel, string telefone, string email, string endereco, string matricula, string serie_turma, string turno, string status)
+        public Form2(string nome, string cpf, string genero, string responsavel, string telefone, string email, string endereco, string matricula, string serie_turma, string turno, string status,string rg)
         {
             InitializeComponent();
             this.nome = nome;
@@ -43,14 +44,27 @@ namespace Cadastro_Aluno_Windowns_Form
             this.serie_turma = serie_turma;
             this.turno = turno;
             this.status = status;
-            
+            this.rg = rg;
+
         }
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
             InitializeComponent();
-            labelNome.Text = this.nome;
+            labelNome.Text = "Ola, " + this.nome;
+            labelCpf.Text = this.cpf;
+            labelGenero.Text = this.genero;
+            labelEmail.Text = this.email;
+            labelResponsavel.Text = this.responsavel;
+            labelRg.Text = this.rg;
+            labelTelefone.Text = this.telefone;
+            labelTurno.Text = this.turno;
+            labelStatus.Text = this.status;
+            labelSerie_turma.Text = this.serie_turma;
+            labelMatricula.Text = this.matricula;
         }
+
 
     }
 }
