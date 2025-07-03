@@ -69,6 +69,7 @@
             TextNome.Size = new Size(508, 31);
             TextNome.TabIndex = 1;
             TextNome.Text = "Nome Completo: ";
+            TextNome.TextChanged += TextNome_TextChanged;
             // 
             // TextCpf
             // 
@@ -79,6 +80,7 @@
             TextCpf.Size = new Size(508, 31);
             TextCpf.TabIndex = 2;
             TextCpf.Text = "Cpf: ";
+            TextCpf.TextChanged += TextCpf_TextChanged;
             // 
             // Genero_Masculino
             // 
@@ -90,6 +92,7 @@
             Genero_Masculino.TabStop = true;
             Genero_Masculino.Text = "Masculino";
             Genero_Masculino.UseVisualStyleBackColor = true;
+            Genero_Masculino.CheckedChanged += Genero_Masculino_CheckedChanged;
             // 
             // Genero_feminino
             // 
@@ -101,6 +104,7 @@
             Genero_feminino.TabStop = true;
             Genero_feminino.Text = "Femenino";
             Genero_feminino.UseVisualStyleBackColor = true;
+            Genero_feminino.CheckedChanged += Genero_feminino_CheckedChanged;
             // 
             // Genero_NaoBinare
             // 
@@ -112,6 +116,7 @@
             Genero_NaoBinare.TabStop = true;
             Genero_NaoBinare.Text = "Não Binare";
             Genero_NaoBinare.UseVisualStyleBackColor = true;
+            Genero_NaoBinare.CheckedChanged += Genero_NaoBinare_CheckedChanged;
             // 
             // TextRg
             // 
@@ -122,6 +127,7 @@
             TextRg.Size = new Size(508, 31);
             TextRg.TabIndex = 6;
             TextRg.Text = "RG: ";
+            TextRg.TextChanged += TextRg_TextChanged;
             // 
             // textResponzável
             // 
@@ -132,6 +138,7 @@
             textResponzável.Size = new Size(508, 31);
             textResponzável.TabIndex = 7;
             textResponzável.Text = "Nome do Responsável: ";
+            textResponzável.TextChanged += textResponzável_TextChanged;
             // 
             // textTelefone
             // 
@@ -142,6 +149,7 @@
             textTelefone.Size = new Size(508, 31);
             textTelefone.TabIndex = 8;
             textTelefone.Text = "Telefone: ";
+            textTelefone.TextChanged += textTelefone_TextChanged;
             // 
             // textEmail
             // 
@@ -152,6 +160,7 @@
             textEmail.Size = new Size(508, 31);
             textEmail.TabIndex = 9;
             textEmail.Text = "E-mail: ";
+            textEmail.TextChanged += textEmail_TextChanged;
             // 
             // textEndereco
             // 
@@ -162,6 +171,7 @@
             textEndereco.Size = new Size(508, 31);
             textEndereco.TabIndex = 10;
             textEndereco.Text = "Endereço: ";
+            textEndereco.TextChanged += textEndereco_TextChanged;
             // 
             // textMatricula
             // 
@@ -172,6 +182,7 @@
             textMatricula.Size = new Size(508, 31);
             textMatricula.TabIndex = 11;
             textMatricula.Text = "Matricula: ";
+            textMatricula.TextChanged += textMatricula_TextChanged;
             // 
             // textSerieTurma
             // 
@@ -182,6 +193,7 @@
             textSerieTurma.Size = new Size(508, 31);
             textSerieTurma.TabIndex = 12;
             textSerieTurma.Text = "Serie/Turma: ";
+            textSerieTurma.TextChanged += textSerieTurma_TextChanged;
             // 
             // textStatus
             // 
@@ -192,6 +204,7 @@
             textStatus.Size = new Size(508, 31);
             textStatus.TabIndex = 14;
             textStatus.Text = "Status (ativo, trancado, evadido, concluído): ";
+            textStatus.TextChanged += textStatus_TextChanged;
             // 
             // button1
             // 
@@ -215,6 +228,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(508, 33);
             comboBox1.TabIndex = 16;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Form1
             // 
