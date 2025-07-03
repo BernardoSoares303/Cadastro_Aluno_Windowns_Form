@@ -31,6 +31,7 @@ namespace Cadastro_Aluno_Windowns_Form
 
         public Form2(string nome, string cpf, string genero, string responsavel, string telefone, string email, string endereco, string matricula, string serie_turma, string turno, string status)
         {
+            InitializeComponent();
             this.nome = nome;
             this.cpf = cpf;
             this.genero = genero;
@@ -42,13 +43,14 @@ namespace Cadastro_Aluno_Windowns_Form
             this.serie_turma = serie_turma;
             this.turno = turno;
             this.status = status;
+            
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            InitializeComponent();
+            labelNome.Text = this.nome;
         }
-        
 
     }
 }

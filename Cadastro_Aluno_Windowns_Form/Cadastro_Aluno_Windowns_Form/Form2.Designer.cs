@@ -35,19 +35,21 @@
             // 
             labelNome.AutoSize = true;
             labelNome.BackColor = Color.MintCream;
-            labelNome.Location = new Point(24, 37);
+            labelNome.Location = new Point(11, 9);
+            labelNome.Margin = new Padding(2, 0, 2, 0);
             labelNome.Name = "labelNome";
-            labelNome.Size = new Size(58, 25);
+            labelNome.Size = new Size(38, 15);
             labelNome.TabIndex = 0;
             labelNome.Text = "nome";
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.ForestGreen;
-            ClientSize = new Size(995, 495);
+            BackColor = Color.OliveDrab;
+            ClientSize = new Size(581, 323);
             Controls.Add(labelNome);
+            Margin = new Padding(2);
             Name = "Form2";
             Text = "Notas/Frequencia";
             Load += Form2_Load;

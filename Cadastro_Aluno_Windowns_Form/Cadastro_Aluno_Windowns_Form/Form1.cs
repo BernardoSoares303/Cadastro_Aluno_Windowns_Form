@@ -37,8 +37,10 @@ namespace Cadastro_Aluno_Windowns_Form
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Form2 f2 = new Form2(a.nome,a.cpf,a.genero,a.responsavel,a.telefone,a.email,a.endereco,a.matricula,a.serie_turma,a.turno,a.status);
-            f2.Show();
+            Form2 Form2 = new Form2(a.nome,a.cpf,a.genero,a.responsavel,a.telefone,a.email,a.endereco,a.matricula,a.serie_turma,a.turno,a.status);
+            Form2.FormClosed += (s, e) => this.Show();
+            Form2.Show();
+            this.Hide();
         }
 
         private void TextNome_TextChanged(object sender, EventArgs e)
