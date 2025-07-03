@@ -28,19 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            labelNome = new Label();
             SuspendLayout();
+            // 
+            // labelNome
+            // 
+            labelNome.AutoSize = true;
+            labelNome.BackColor = Color.MintCream;
+            labelNome.Location = new Point(24, 37);
+            labelNome.Name = "labelNome";
+            labelNome.Size = new Size(58, 25);
+            labelNome.TabIndex = 0;
+            labelNome.Text = "nome";
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.ForestGreen;
+            ClientSize = new Size(995, 495);
+            Controls.Add(labelNome);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Notas/Frequencia";
             Load += Form2_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label labelNome;
     }
 }
