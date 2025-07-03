@@ -63,6 +63,7 @@ namespace Cadastro_Aluno_Windowns_Form
             labelStatus.Text = this.status;
             labelSerie_turma.Text = this.serie_turma;
             labelMatricula.Text = this.matricula;
+            labelEndereco.Text = this.endereco;
         }
 
 

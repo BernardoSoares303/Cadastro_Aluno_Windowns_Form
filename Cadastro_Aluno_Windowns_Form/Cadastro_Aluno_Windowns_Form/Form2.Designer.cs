@@ -49,6 +49,7 @@
             labelTurno = new Label();
             labelStatus = new Label();
             labelGenero = new Label();
+            labelEndereco = new Label();
             SuspendLayout();
             // 
             // labelNome
@@ -206,7 +207,7 @@
             labelEmail.AutoSize = true;
             labelEmail.BackColor = Color.Azure;
             labelEmail.BorderStyle = BorderStyle.FixedSingle;
-            labelEmail.Location = new Point(16, 225);
+            labelEmail.Location = new Point(16, 230);
             labelEmail.Name = "labelEmail";
             labelEmail.Size = new Size(2, 27);
             labelEmail.TabIndex = 16;
@@ -256,10 +257,20 @@
             labelGenero.AutoSize = true;
             labelGenero.BackColor = Color.Azure;
             labelGenero.BorderStyle = BorderStyle.FixedSingle;
-            labelGenero.Location = new Point(16, 437);
+            labelGenero.Location = new Point(16, 464);
             labelGenero.Name = "labelGenero";
             labelGenero.Size = new Size(2, 27);
             labelGenero.TabIndex = 21;
+            // 
+            // labelEndereco
+            // 
+            labelEndereco.AutoSize = true;
+            labelEndereco.BackColor = Color.Azure;
+            labelEndereco.BorderStyle = BorderStyle.FixedSingle;
+            labelEndereco.Location = new Point(16, 426);
+            labelEndereco.Name = "labelEndereco";
+            labelEndereco.Size = new Size(2, 27);
+            labelEndereco.TabIndex = 22;
             // 
             // Form2
             // 
@@ -267,6 +278,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.OliveDrab;
             ClientSize = new Size(830, 538);
+            Controls.Add(labelEndereco);
             Controls.Add(labelGenero);
             Controls.Add(labelStatus);
             Controls.Add(labelTurno);
@@ -318,5 +330,6 @@
         private Label labelTurno;
         private Label labelStatus;
         private Label labelGenero;
+        private Label labelEndereco;
     }
 }

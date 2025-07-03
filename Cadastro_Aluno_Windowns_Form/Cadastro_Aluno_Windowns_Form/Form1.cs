@@ -70,7 +70,7 @@ namespace Cadastro_Aluno_Windowns_Form
 
         private void textEmail_TextChanged(object sender, EventArgs e)
         {
-            a.email = Regex.Replace(textEmail.Text, @"Email:\s*", "");
+            a.email = Regex.Replace(textEmail.Text, @"E-mail:\s*", "");
         }
 
         private void textEndereco_TextChanged(object sender, EventArgs e)
